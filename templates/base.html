@@ -41,13 +41,44 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+            <form method="GET" action="" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <li class="list-inline-item">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                    <div class="text-center">
+                        <div><i class="fa fa-shopping-bag fa-lg"></i></div>
+                            <p class="my-0">
+                            {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                            {% else %}
+                                £0.00
+                            {% endif %}
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <!-- Tutorial for navbar obtained here https://mdbootstrap.com/docs/jquery/navigation/navbar/-->
+            <div class="collapse navbar-collapse" id="navbar-list-4">
+                <ul class="ul-none navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item avatar dropdown">
+                        <a class="nav-link dropdown-toggle colour-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0 margin-left-10"
+                            alt="avatar image" height="35">
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                            {% endif %}
+                            <a class="dropdown-item" href="#">My Profile</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        {% else %}
+                            <a class="dropdown-item" href="#">Register</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                         {% endif %}
+                    </div>
                     </li>
                 </ul>
             </div>
