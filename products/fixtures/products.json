@@ -1,0 +1,146 @@
+[
+  {
+    "pk": "1",
+    "model": "products.product",
+    "fields": {
+      "sku": "64838",
+      "name": "Colourful, bold lines",
+      "description": "Colourful, bold lines",
+      "price": 5,
+      "category": 1,
+      "image": "0001.jpg"
+    }
+  },
+  {
+    "pk": "2",
+    "model": "products.product",
+    "fields": {
+      "sku": "92739",
+      "name": "Flower sketch",
+      "description": "Flower sketch",
+      "price": 8,
+      "category": 2,
+      "image": "0002.jpg"
+    }
+  },
+  {
+    "pk": "3",
+    "model": "products.product",
+    "fields": {
+      "sku": "49144",
+      "name": "Hand on pink background",
+      "description": "Hand on pink background",
+      "price": 7,
+      "category": 2,
+      "image": "0003.jpg"
+    }
+  },
+  {
+    "pk": "4",
+    "model": "products.product",
+    "fields": {
+      "sku": "49386",
+      "name": "Black and white sculpture",
+      "description": "Black and white sculpture",
+      "price": 9,
+      "category": 3,
+      "image": "0004.jpg"
+    }
+  },
+  {
+    "pk": "5",
+    "model": "products.product",
+    "fields": {
+      "sku": "64154",
+      "name": "Ink in water",
+      "description": "Ink in water",
+      "price": 6,
+      "category": 5,
+      "image": "0005.jpg"
+    }
+  },
+  {
+    "pk": "6",
+    "model": "products.product",
+    "fields": {
+      "sku": "99983",
+      "name": "Colourful plants in vase",
+      "description": "Colourful plants in vase",
+      "price": 6,
+      "category": 1,
+      "image": "0006.jpg"
+    }
+  },
+  {
+    "pk": "7",
+    "model": "products.product",
+    "fields": {
+      "sku": "79048",
+      "name": "Oil on canvas",
+      "description": "Oil on canvas",
+      "price": 7,
+      "category": 2,
+      "image": "0007.jpg"
+    }
+  },
+  {
+    "pk": "8",
+    "model": "products.product",
+    "fields": {
+      "sku": "45351",
+      "name": "Night lights",
+      "description": "Night lights",
+      "price": 6,
+      "category": 1,
+      "image": "0008.jpg"
+    }
+  },
+  {
+    "pk": "09",
+    "model": "products.product",
+    "fields": {
+      "sku": "99688",
+      "name": "Flowers against yellow backdrop",
+      "description": "Flowers against yellow backdrop",
+      "price": 6,
+      "category": 1,
+      "image": "0009.jpg"
+    }
+  },
+  {
+    "pk": "10",
+    "model": "products.product",
+    "fields": {
+      "sku": "82029",
+      "name": "All seeing eye",
+      "description": "All seeing eye",
+      "price": 8,
+      "category": 4,
+      "image": "0010.jpg"
+    }
+  },
+  {
+    "pk": "11",
+    "model": "products.product",
+    "fields": {
+      "sku": "64862",
+      "name": "Colourful mural on wall",
+      "description": "Colourful mural on wall",
+      "price": 9,
+      "category": 1,
+      "image": "0011.jpg"
+    }
+  },
+  {
+    "pk": "12",
+    "model": "products.product",
+    "fields": {
+      "sku": "07343",
+      "name": "Balloons",
+      "description": "Balloons",
+      "price": 8,
+      "category": 1,
+      "image": "0012.jpg"
+    }
+  }
+]
