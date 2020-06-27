@@ -1,13 +1,14 @@
 from django.shortcuts import render
-from django.db import models
+from .models import Product
 
 
-class Category(models.Model):
-    name = models.Charfield(max_length=254)
+def all_products(request):
+    """View to show all products, including sorting and search queries"""
 
-    def __str__(self):
-        return self.name
+    products = Product.objects.all()
 
+    context = {
+        'products': products,
+    }
 
-class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    return render(request, 'products/products.html', context)
