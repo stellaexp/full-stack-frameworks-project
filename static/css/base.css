@@ -20,6 +20,10 @@ html {
     width: 1.5rem;
 }
 
+.ul-none {
+    list-style-type: none;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;

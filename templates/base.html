@@ -62,7 +62,7 @@
                     </div>
                 </a>
             </li>
-            <!-- Tutorial for navbar obtained here https://mdbootstrap.com/docs/jquery/navigation/navbar/-->
+            <!-- Tutorial for navbar obtained here https://mdbootstrap.com/docs/jquery/navigation/navbar/
             <div class="collapse navbar-collapse" id="navbar-list-4">
                 <ul class="ul-none navbar-nav ml-auto nav-flex-icons">
                     <li class="nav-item avatar dropdown">
@@ -84,7 +84,23 @@
                     </div>
                     </li>
                 </ul>
+            </div>-->
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid homepage">
+            <ul class="ul-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Works
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href="{% url 'products' %}?category=painting" class="dropdown-item">Painting</a>
+                <a href="{% url 'products' %}?category=sculpture" class="dropdown-item">Sculpture</a>
+                <a href="{% url 'products' %}?category=collage" class="dropdown-item">Collage</a>
+                <a href="{% url 'products' %}?category=photography" class="dropdown-item">Photography</a>
             </div>
+            </ul>
         </div>
     </nav>
 
