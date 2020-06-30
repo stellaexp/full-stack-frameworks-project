@@ -101,6 +101,13 @@
                 <a href="{% url 'products' %}?category=photography" class="dropdown-item">Photography</a>
             </div>
             </ul>
+            <ul class="ul-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="sort">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price</a>
+            </ul>
         </div>
     </nav>
 
