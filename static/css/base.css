@@ -24,6 +24,10 @@ html {
     list-style-type: none;
 }
 
+.font-black {
+    color: black !important;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
