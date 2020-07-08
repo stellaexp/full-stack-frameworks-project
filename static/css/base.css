@@ -37,3 +37,8 @@ html {
 	background: white;
 	z-index: -1;
 }
+
+.max-thumbnail {
+    max-width: 304px;
+    max-height: 236px;
+}
