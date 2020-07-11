@@ -38,23 +38,23 @@
                             </tr>
                         {% endfor %}
                         </tbody>
+                        <!-- Tips on structure for table footer obtained here https://stackoverflow.com/questions/12568536/display-total-below-html-css-table -->
                         <tfoot>
                             <tr>
                                 <td colspan="3">
-                                <div class="float-right">                 
-                                    <strong>Basket Total: £{{ total|floatformat:2 }}</strong>
-                                    <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
-                                    {% if free_delivery_delta > 0 %}
-                                        <p class="text-success">
-                                            Add <strong>£{{ free_delivery_delta }}</strong> for free delivery!
-                                        </p>
-                                    {% endif %}
-                                </div>
+                                    <div class="float-right">                 
+                                        <strong>Basket Total: £{{ total|floatformat:2 }}</strong>
+                                        <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                                        <h4 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                                        {% if free_delivery_delta > 0 %}
+                                            <p class="text-success">
+                                                Add <strong>£{{ free_delivery_delta }}</strong> for free delivery!
+                                            </p>
+                                        {% endif %}
+                                    </div>
                                 </td>
                             </tr>
                         </tfoot>
-         
                     </table>
                 {% else %}
                     <p class="lead mb-4">Your basket is empty.</p>
@@ -62,7 +62,7 @@
                         Return to store
                     </a>
                 {% endif %}
-            </div>
+        </div>
     </div>
 
 

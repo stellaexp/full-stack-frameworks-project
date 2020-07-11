@@ -52,7 +52,7 @@
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center">
                         <div class="font-black"><i class="fa fa-shopping-basket fa-lg"></i></div>
-                            <p class="my-0">
+                            <p class=" font-black my-0">
                             {% if grand_total %}
                                 £{{ grand_total|floatformat:2 }}
                             {% else %}
@@ -96,6 +96,7 @@
                 Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                <a href="{% url 'products' %}" class="dropdown-item">All</a>
                 <a href="{% url 'products' %}?category=painting" class="dropdown-item">Painting</a>
                 <a href="{% url 'products' %}?category=sculpture" class="dropdown-item">Sculpture</a>
                 <a href="{% url 'products' %}?category=collage" class="dropdown-item">Collage</a>
