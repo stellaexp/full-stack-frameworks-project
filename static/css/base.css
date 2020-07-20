@@ -38,7 +38,12 @@ html {
 	z-index: -1;
 }
 
+/*delete?*/
 .max-thumbnail {
     max-width: 304px;
     max-height: 236px;
+}
+
+.grid-item {
+  margin-bottom: 10px;
 }
