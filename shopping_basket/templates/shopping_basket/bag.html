@@ -33,7 +33,22 @@
                         {% for item in bag_items %}
                             <tr>
                                 <td><img class="max-thumbnail img-thumbnail" src="{{ item.product.image.url }}" style="width: 304; height: 236"></td>
-                                <td>{{ item.quantity }}</td>
+                                <td>
+                                    <form method="POST" action="{% url 'edit_basket' item.product.id %}" class="">
+                                        {% csrf_token %}
+                                        <div class="form-group">                     
+                                            <div class="mt-3 mb-1">Quantity: </div>
+                                            <input class="form-control-sm" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                            <input type="submit" class="btn btn-success text-uppercase" value="Update">
+                                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                        </div>
+                                    </form>
+                                    <form method="POST" action="{% url 'delete_item_from_basket' item.product.id %}">
+                                    {% csrf_token %}
+                                        <input type="submit" class="btn btn-sm btn-danger" value="Delete">
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    </form>
+                                </td>
                                 <td>£{{ item.product.price }}</td>
                             </tr>
                         {% endfor %}
