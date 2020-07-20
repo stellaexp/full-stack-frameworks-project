@@ -19,6 +19,7 @@
     {% endblock %}
 
     {% block extra_css %}
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet"> 
     {% endblock %}
 
     {% block corejs %}
@@ -38,15 +39,15 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid homepage">
-            <a class="navbar-brand" href="#">CITIZEN9</a>
+            <a class="navbar-brand" href="{% url 'products' %}">CITIZEN9</a>
             <button class="navbar-toggler" type="submit" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
             <form method="GET" action="{% url 'products' %}" class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2 rounded-pill" type="text" name="q" placeholder="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
             </form>
             <li class="list-inline-item">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
