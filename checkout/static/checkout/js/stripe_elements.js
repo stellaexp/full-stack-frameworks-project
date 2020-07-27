@@ -23,7 +23,7 @@ card.addEventListener('change', function (event) {
     }
 });
 
-/* Sumit Form - From Stripe Docs */
+/* Sumit Form - From Stripe Docs and course videos */
 
 var form = document.getElementById('payment-form');
 
