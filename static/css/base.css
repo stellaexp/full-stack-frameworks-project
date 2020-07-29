@@ -41,7 +41,7 @@ a.navbar-brand {
     color: black !important;
 }
 
-/* DELETE? */
+/* DELETE?
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -50,9 +50,9 @@ a.navbar-brand {
 	position: fixed;
 	background: white;
 	z-index: -1;
-}
+}*/
 
-/*delete?*/
+
 .max-thumbnail {
     max-width: 304px;
     max-height: 236px;
@@ -61,3 +61,5 @@ a.navbar-brand {
 .grid-item {
   margin-bottom: 10px;
 }
+
+/* For sign in form */
