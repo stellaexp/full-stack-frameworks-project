@@ -6,7 +6,7 @@ var elements = stripe.elements();
 var card = elements.create("card" );
 card.mount("#card-element");
 
-/* Handle realtime validation errors on card element */
+/* Handles realtime validation errors on card element */
 
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
@@ -44,7 +44,7 @@ form.addEventListener('submit', function(ev) {
                 <span>${result.error.message}</span>`;
             $(errorDiv).html(html);
             card.update({ 'disabled': false});
-            $('#submit-button').attr('disabled', false);
+            $('#submit-btn').attr('disabled', false);
     } else {
       // The payment has been processed!
       if (result.paymentIntent.status === 'succeeded') {

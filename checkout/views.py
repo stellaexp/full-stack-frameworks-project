@@ -82,18 +82,18 @@ def checkout(request):
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
 
-    template ='checkout/checkout.html'
+    template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
-        'client_secret_key': intent.client_secret,
+        'client_secret': intent.client_secret,
     }
 
     return render(request, template, context)
 
 
 def checkout_success(request, order_number):
-    """ For successful checkouts """
+    """ Handle successful checkouts """
     save_info = request.session.get('save_info')
     order = get_object_or_404(CustomerOrder, order_number=order_number)
     messages.success(request, f'Order successfully processed! \
@@ -107,3 +107,5 @@ def checkout_success(request, order_number):
     context = {
         'order': order,
     }
+
+    return render(request, template, context)

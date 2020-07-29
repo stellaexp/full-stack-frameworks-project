@@ -29,14 +29,14 @@
                         {{ order_form.postcode | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
                         {{ order_form.telephone | as_crispy_field }}
-                        <div class="form-check form-check-inline float-right mr-0">
+                        <div class="form-check form-check-inline">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="">Create an account</a> or 
-                                    <a class="text-info" href="">login</a> to save info
+                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save info
                                 </label>
 							{% endif %}
 						</div>
@@ -50,16 +50,15 @@
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
 
-					<button id="submit-button" class="btn btn-success">
-                    <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
-						<span class="font-weight-bold">Payment</span>
+
+					<button type="submit" id="submit-btn" class="submit-btn btn btn-lg btn-success">
+						<span class="font-weight-bold">Place order</span>
 						<span class="icon">
 							<i class="fa fa-lock"></i>
 						</span>
-                    </a>
 					</button>
          
-						<p class="small text-secondary mt-3 mb-3">
+						<p class="small text-secondary mt-3 mb-5">
 							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
 						</p>
                 </form>
