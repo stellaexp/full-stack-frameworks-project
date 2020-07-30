@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 
-a.navbar-brand {
+a.navbar-brand, .navbar-brand {
     font-family: 'Londrina Shadow', cursive !important;
     font-size: 2.5rem;
 }
@@ -11,13 +11,12 @@ a.navbar-brand {
     height: 100vh;
 }*/
 
-#index-jumbotron {
-    /*background-image: url('{% static "images/yellow-building.jpg" %}');*/
+#main-background {
+    background-image: url('{% static "images/yellow-building.jpg" %}');
     background-size: cover;
 	background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
-    background-size: cover;
 }
 
 #contact-btn {
@@ -40,17 +39,6 @@ a.navbar-brand {
 .font-black {
     color: black !important;
 }
-
-/* DELETE?
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}*/
 
 
 .max-thumbnail {
