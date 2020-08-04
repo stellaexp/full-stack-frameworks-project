@@ -54,6 +54,7 @@ form.addEventListener('submit', function(ev) {
 	                        line1: $.trim(form.address1.value),
                             line2: $.trim(form.address2.value),
                             city: $.trim(form.county.value),
+                            postal_code: $.trim(form.postcode.value)
 	                    }
 	                }
 	            },
@@ -63,7 +64,8 @@ form.addEventListener('submit', function(ev) {
 	                    line1: $.trim(form.address1.value),
                         line2: $.trim(form.address2.value),
 	                    city: $.trim(form.county.value),
-	                    postal_code: $.trim(form.postcode.value),
+                        postal_code: $.trim(form.postcode.value),
+                        country: $.trim(form.country.value),
 	                }
 	            },
 	        }).then(function(result) {

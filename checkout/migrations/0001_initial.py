@@ -22,7 +22,6 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254)),
                 ('address1', models.CharField(max_length=80)),
                 ('address2', models.CharField(blank=True, max_length=80, null=True)),
-                ('address3', models.CharField(blank=True, max_length=80, null=True)),
                 ('postcode', models.CharField(blank=True, max_length=20, null=True)),
                 ('county', models.CharField(max_length=80, null=True)),
                 ('country', models.CharField(max_length=40)),

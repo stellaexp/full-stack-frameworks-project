@@ -11,7 +11,6 @@ class CustomerOrder(models.Model):
     email = models.EmailField(max_length=254, null=False, blank=False)
     address1 = models.CharField(max_length=80, null=False, blank=False)
     address2 = models.CharField(max_length=80, null=True, blank=True)
-    address3 = models.CharField(max_length=80, null=True, blank=True)
     postcode = models.CharField(max_length=20, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=False)
     country = models.CharField(max_length=40, null=False, blank=False)
