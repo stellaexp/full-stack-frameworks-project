@@ -28,8 +28,8 @@ card.addEventListener('change', function (event) {
 var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
-	    ev.preventDefault();
-	    card.update({ 'disabled': true});
+	    /* ev.preventDefault();
+	    card.update({ 'disabled': true});*/
         $('#submit-btn').attr('disabled', true);
         
 	    var saveInfo = Boolean($('#id-save-info').attr('checked'));

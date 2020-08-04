@@ -55,6 +55,9 @@
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
             </form>
             <li class="list-inline-item">
+                <a href="{% url 'account_login' %}">Login</a>
+            </li>
+            <li class="list-inline-item">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center">
                         <div class="font-black"><i class="fa fa-shopping-basket fa-lg"></i></div>
