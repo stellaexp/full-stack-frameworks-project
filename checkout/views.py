@@ -9,6 +9,24 @@ from products.models import Product
 from shopping_basket.contexts import bag_contents
 
 import stripe
+import json
+
+
+@require_POST
+def cache_checkout(request):
+    try:
+        pid = request.POST.get('client_secret').split('_secret')[0]
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.PaymentIntent.modify(pid, metadata={
+            'bag': json.dumps(request.session.get('bag', {})),
+            'save_info': request.POST.get('save_info'),
+            'username': request.user,
+        })
+        return HttpResponse(status=200)
+    except Exception as e:
+        messages.error(request,  "Sorry, your payment can't be \
+            processed. Please try again")
+        return HttpResponse(content=e, status=400)
 
 
 def checkout(request):
@@ -52,7 +70,7 @@ def checkout(request):
                             )
                             order_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request, "We can't find your item in our database.")
+                    messages.error(request, "Your item can't be found")
                     order.delete()
                     return redirect(reverse('view_bag'))
 
