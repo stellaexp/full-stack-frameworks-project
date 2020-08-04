@@ -55,5 +55,8 @@ def webhook(request):
 
     # Call the event handler with the event
 
+    print(settings.STRIPE_WH_SECRET)
+    print(settings.STRIPE_SECRET_KEY)
+
     response = event_handler(event)
     return response
