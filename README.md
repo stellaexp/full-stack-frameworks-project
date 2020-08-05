@@ -98,6 +98,42 @@ I decided to manually test the application. Each page was tested on Chrome, Fire
 * Search button/finder works
 * User can search the database and it will return relevant results and number of matches
 * If no matches in the database it should return "0 Artworks found for ..."
+* User can sort the returns by price
+
+7. Add to shopping basket
+* User can select item from image gallery
+* Add quantity from 1-99 to shopping basket
+* Cannot enter a null value or more than 99+
+* Return to shop link working
+
+8. Shopping basket
+* Shopping basket nav link works
+* You can see thumbnail of artwork purchasing, the quantity and price
+* User should be able to update total number of items inside shopping basket
+* User can permanently delete items from basket
+* Option to 'keep shopping' and this returns user to store, while saving items in basket
+* 'keep shopping' button working
+* Total should be displayed at the bottom of the table
+* Shopper should be prompted to spend a certain sum if order total less than £20
+* £0.25 should be added to order if not qualifying for free delivery
+* Delivery should be free if order total is more than £20
+* If shopping basket emptied user sees notification basket is empty and return to store button
+* Return to store button working
+* Secure checkout button working
+
+9. Checkout
+* Crispy forms should be displaying with form validation
+* Create an account link working if not an authenticated user
+* Login link working for authenticated user
+* If user is logged in 'Save this delivery information to my profile' text showing
+* Connection is secure symbol showing in url
+* Stripe payment should validate any card on typing in details
+* Stripe payment should submit
+* Page should return to checkout success
+
+10. Checkout success
+* Thank you message with users email displayed
+* Return to store button working
 
 ## Deployment
 
