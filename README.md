@@ -1,33 +1,53 @@
 # Full Stack Frameworks Project
 
-The project I created for Code Institute's final Full Stack Frameworks conclusion project was based on an online art gallery. The purpose of this site was to showcase a range of prints and allow the user to purchase them, using Stripe authentication. I named this fictional online store 'CITIZEN9'.
+The project I created for Code Institute's Full Stack Frameworks conclusion was based on a fictional online art gallery and shop. The purpose of this site was to showcase a range of prints and allow the user to purchase them, using Stripe authentication. I named this online store 'CITIZEN9'.
  
 ## UX
  
-I started the UX process by looking at a variety of different popular online shops, such as ASOS, Amazon and Society6 to see how a user would navigate their shopping experience. I then focused on how the shopping basket was structured and the ease of the buying processs.
+I started the UX process by looking at a variety of popular online shops, such as ASOS, Amazon and Society6, to see how a user would navigate their shopping experience. I then focused on the shopping basket structure and the ease of the buying processs.
 
-I then created my user stories based on looking at these sites and from watching the videos in the course content. I wanted to create a 'clean' look and feel to the website, with easy navigation at the top.
+I then created my user stories based on my research, and from the videos in the course content.
+
+I knew I wanted to create a 'clean' look and feel to the website, with easy navigation at the top.  I then created some wireframes based on this.
 
 The user stories and low-fidelity wireframes are located in the UI/UX folder.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The purpose of this project was to showcase all our knowledge of front and backend technologies, using stripe payments.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+* Feature 1 - login - user can login
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+* Feature 2 - logout - user can logout
+
+* Feature 3 - browse - user can browse prints/gallery
+
+* Feature 4 - filter - by category
+
+* Feature 5 - sort - by price
+
+* Feature 6 - search - user can search keywords to find artworks
+
+* Feature 7 - add - add to shopping basket
+
+* Feature 8 - update - add more items to shopping basket, without having to return to store
+
+* Feature 9 - delete - delete from shopping basket
+
+* Feature 10 - create account - user can create an account
+
+* Feature 11 - payment - user can submit payment details through stripe
+
 
 ### Features Left to Implement
-- Another feature idea
+
+* An email authentication to verify the users email
+
+* An account profile, so a user can review past orders
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 1. [Balsamiq](https://balsamiq.com/)
 * Used to create low-fidelity wireframes.
@@ -40,20 +60,16 @@ In this section, you should mention all of the languages, frameworks, libraries,
 5. [Python](https://www.python.org/)
 *  The backend programming language.
 6. [Django](https://www.djangoproject.com/)
-* High-level Python Web framework.
+* The project is built on this high-level Python Web framework.
 7. [pip](https://pip.pypa.io/en/stable/)
 * pip is the package installer for Python
 8. [Masonry](https://masonry.desandro.com/)
-* A JavaScript grid layout library.
+* A JavaScript grid layout library for the image gallery.
 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+I decided to manually test the application. Each page was tested on Chrome, Firefox, Safari, Opera, Internet Explorer using the following the testing criteria;
 
 1. Contact form:
     1. Go to the "Contact Us" page
@@ -81,7 +97,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
-I followed, with merticulous detail, the instructions on how to build an online shop in the course content. I would like to give credit to mentor support, who pointed me in the right direction if I became stuck.
+I followed, with meticulous detail, the instructions on how to build an online shop in the course content. I would like to give credit to mentor support, who pointed me in the right direction if I became stuck.
 
 ### Content
 
@@ -93,8 +109,8 @@ number of artworks and demonstrates the purpose of the site.
 
 ### Media
 
-All images for this project were obtained from the open source platform unsplash.com [https://unsplash.com/].
+All images for this project were obtained from the open source platform [unsplash.com](https://unsplash.com/).
 
 ### Acknowledgements
 
-- I received inspiration for this project from Society6 [https://society6.com/] and Artfinder [https://www.artfinder.com/]. I'd like to acknowledge Code Institute for providing very thorough instructions on how to complete this online shop.
+- I received inspiration for this project from [Society6](https://society6.com/) and [Artfinder](https://www.artfinder.com/). I'd like to acknowledge Code Institute for providing very thorough instructions on how to complete this online shop.
