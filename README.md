@@ -1,12 +1,14 @@
-# Your Project's Name
+# Full Stack Frameworks Project
 
-The project I created for Code Institute's final project for the Full Stacks Frameworks conclusion was based on an online gallery where a user could buy prints. I named this 'CITIZEN9'
+The project I created for Code Institute's final Full Stack Frameworks conclusion project was based on an online art gallery. The purpose of this site was to showcase a range of prints and allow the user to purchase them, using Stripe authentication. I named this fictional online store 'CITIZEN9'.
  
 ## UX
  
-I started the UX process by looking at a variety of different online shops and their user experience. I looked at how the shopping basket was structured and the ease of the buying processs.
+I started the UX process by looking at a variety of different popular online shops, such as ASOS, Amazon and Society6 to see how a user would navigate their shopping experience. I then focused on how the shopping basket was structured and the ease of the buying processs.
 
-You can find the user stories under the UI/UX folder.
+I then created my user stories based on looking at these sites and from watching the videos in the course content. I wanted to create a 'clean' look and feel to the website, with easy navigation at the top.
+
+The user stories and low-fidelity wireframes are located in the UI/UX folder.
 
 ## Features
 
@@ -27,8 +29,22 @@ In addition, you may also use this section to discuss plans for additional featu
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+1. [Balsamiq](https://balsamiq.com/)
+* Used to create low-fidelity wireframes.
+2. [Bootstrap](https://flask.palletsprojects.com/en/1.1.x/)
+* Robust front-end library for HTML, CSS and JS.
+3. [Google Fonts](https://fonts.google.com/)
+*  For appealing typography.
+4. [jQuery](https://jquery.com/)
+*  The project uses jQuery to simplify DOM manipulation.
+5. [Python](https://www.python.org/)
+*  The backend programming language.
+6. [Django](https://www.djangoproject.com/)
+* High-level Python Web framework.
+7. [pip](https://pip.pypa.io/en/stable/)
+* pip is the package installer for Python
+8. [Masonry](https://masonry.desandro.com/)
+* A JavaScript grid layout library.
 
 
 ## Testing
@@ -65,14 +81,20 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
-I followed with merticulous detail the instructions on how to build an online shop, as shown in the course content.
+I followed, with merticulous detail, the instructions on how to build an online shop in the course content. I would like to give credit to mentor support, who pointed me in the right direction if I became stuck.
 
 ### Content
-- 
+
+I initially wanted to use the 'Art Images: Drawing/Painting/Sculptures/Engravings' dataset from Kaggle. Unfortunately, however this was just not suitable for my purpose, so I had to create my own dataset. 
+I started by looking at images from the open source website unsplash.com and then modeled my JSON on the course demonstration.
+
+The content is entirely fictional and created by myself, therefore it is very limited. I would ideally have liked a huge database of artworks available to the user, but for all intents and purposes it showcases a limited 
+number of artworks and demonstrates the purpose of the site.
 
 ### Media
-- All images for this project were obtained from the open source platform unsplash.com
+
+All images for this project were obtained from the open source platform unsplash.com [https://unsplash.com/].
 
 ### Acknowledgements
 
-- I received inspiration for this project from Society6 and Artfinder.
+- I received inspiration for this project from Society6 [https://society6.com/] and Artfinder [https://www.artfinder.com/]. I'd like to acknowledge Code Institute for providing very thorough instructions on how to complete this online shop.
