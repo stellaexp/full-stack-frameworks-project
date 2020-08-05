@@ -55,6 +55,7 @@
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
             </form>
             {% if user.is_authenticated %}
+            {% csrf_token %}
             <li class="list-inline-item"><a href="{% url 'account_email' %}">Change E-mail</a></li>
             <li class="list-inline-item"><a href="{% url 'account_logout' %}">Sign Out</a></li>
             {% else %}

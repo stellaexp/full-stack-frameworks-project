@@ -11,12 +11,9 @@ a.navbar-brand, .navbar-brand {
     height: 100vh;
 }*/
 
-#main-background {
-    background-image: url('{% static "images/yellow-building.jpg" %}');
-    background-size: cover;
-	background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
+.img-jumbo {
+    max-height: 200vh;
+
 }
 
 #contact-btn {
