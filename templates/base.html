@@ -54,9 +54,13 @@
                 <input class="form-control mr-sm-2 rounded-pill" type="text" name="q" placeholder="Search">
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
             </form>
-            <li class="list-inline-item">
-                <a href="{% url 'account_login' %}">Login</a>
-            </li>
+            {% if user.is_authenticated %}
+            <li class="list-inline-item"><a href="{% url 'account_email' %}">Change E-mail</a></li>
+            <li class="list-inline-item"><a href="{% url 'account_logout' %}">Sign Out</a></li>
+            {% else %}
+            <li class="list-inline-item"><a href="{% url 'account_login' %}">Sign In</a></li>
+            <li class="list-inline-item"><a href="{% url 'account_signup' %}">Sign Up</a></li>
+            {% endif %}
             <li class="list-inline-item">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center">
@@ -71,7 +75,7 @@
                     </div>
                 </a>
             </li>
-            <!-- Tutorial for navbar obtained here https://mdbootstrap.com/docs/jquery/navigation/navbar/
+            <!-- Tutorial for navbar obtained here https://mdbootstrap.com/docs/jquery/navigation/navbar/-->
             <div class="collapse navbar-collapse" id="navbar-list-4">
                 <ul class="ul-none navbar-nav ml-auto nav-flex-icons">
                     <li class="nav-item avatar dropdown">
@@ -93,7 +97,7 @@
                     </div>
                     </li>
                 </ul>
-            </div>-->
+            </div>
         </div>
     </nav>
     
