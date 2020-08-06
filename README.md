@@ -4,12 +4,45 @@ The project I created for Code Institute's Full Stack Frameworks conclusion was 
  
 ## UX
  
-I started the UX process by looking at a variety of popular online shops, such as ASOS, Amazon and Society6, to see how a user would navigate their shopping experience. I then focused on the shopping basket structure and the ease of the buying processs. 
+I started the UX process by looking at a variety of popular online shops, such as ASOS, Amazon and Society6, to see how a user would navigate their shopping experience. I focused on the shopping basket structure and the ease of the buying processs. 
 I then created my user stories based on my research, and from the videos in the course content.
 
-I knew I wanted to create a 'clean' look and feel to the website, with easy navigation at the top. I decided on the name and thought the logo should come from Google Fonts. I then created some wireframes based upon this.
+After I created my user stories I turned my attention to the UI of the site. I knew I wanted to create a 'clean' look and feel to the website, with easy navigation at the top. I decided on the name and thought the logo should come from Google Fonts. I then created some wireframes based upon this.
 
 The user stories and low-fidelity wireframes are located in the UI-UX folder.
+
+## Database schema
+
+The structure of the data in sqlite is as follows;
+
+Products
+
+```
+  {
+    "pk": "1",
+    "model": "products.product",
+    "fields": {
+      "sku": "64838",
+      "name": "Colourful, bold lines",
+      "description": "Colourful, bold lines",
+      "price": 5,
+      "category": 1,
+      "image": "0001.jpg"
+    }
+```
+
+Categories
+
+```
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "photography",
+      "friendly_name": "Photography"
+    }
+  }
+```
 
 ## Features
 
@@ -31,7 +64,7 @@ The purpose of this project was to showcase our knowledge of front and backend t
 
 * Feature 7 - **add** - add to shopping basket.
 
-* Feature 8 - **update** - add more items to shopping basket, without having to return to store.
+* Feature 8 - **update** - alter number of items in shopping basket, without having to return to store.
 
 * Feature 9 - **delete** - delete from shopping basket.
 
@@ -46,7 +79,7 @@ The purpose of this project was to showcase our knowledge of front and backend t
 
 * An account profile, so a user can review past orders.
 
-Although not a feature, I would really liked a more robust dataset so the user has more to work with.
+Although not a feature, I would really have liked a more robust dataset so the user has more to view.
 
 ## Technologies Used
 
@@ -64,13 +97,17 @@ Although not a feature, I would really liked a more robust dataset so the user h
 * The project is built on this high-level Python Web framework.
 7. [pip](https://pip.pypa.io/en/stable/)
 * pip is the package installer for Python
-8. [Masonry](https://masonry.desandro.com/)
+8. [db.sqlite3](https://www.sqlite.org/index.html)
+* SQLite is the relational database management system 
+9. [Masonry](https://masonry.desandro.com/)
 * A JavaScript grid layout library for the image gallery.
+10. [Gitpod](https://www.gitpod.io/)
+* The development environment used
 
 
 ## Testing
 
-I decided to manually test the application. Each page was tested on Chrome, Firefox, Safari, Opera, Internet Explorer using the following the testing criteria;
+I decided to manually test the site. Each page was tested on Chrome, Firefox, Safari, Opera, Internet Explorer using the following the testing criteria;
 
 1. Login nav link
 * Link should work
@@ -129,6 +166,7 @@ I decided to manually test the application. Each page was tested on Chrome, Fire
 * Connection is secure symbol showing in url
 * Stripe payment should validate any card on typing in details
 * Stripe payment should submit
+* Verified this in Stripe Webhooks - should say 'succeeded'
 * Page should return to checkout success
 
 10. Checkout success
@@ -149,13 +187,13 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
-I followed, with meticulous detail, the instructions on how to build an online shop from the course content. I would also like to give credit to mentor support, who pointed me in the right direction if I became stuck.
+I followed, with meticulous detail, the instructions on how to build an online shop from the course content. I would also like to give credit to Tutor Support, who pointed me in the right direction if I became stuck.
 
 ### Content
 
-I initially wanted to use the 'Art Images: Drawing/Painting/Sculptures/Engravings' dataset from Kaggle. Unfortunately, however, this was just not suitable for my purpose, so I had to create my own dataset.
+I initially wanted to use the 'Art Images: Drawing/Painting/Sculptures/Engravings' dataset from Kaggle. I tried using this dataset initially but soon realised this was not fit for my purpose, so I had to create my own dataset.
 
-I started by looking at images from the open source website unsplash.com and then modeled my dataset on the course demonstration. You can see the structure in the 'fixtures' folder.
+I started by looking at images from the open source image gallery website [unsplash.com](https://unsplash.com/) and then modeled my dataset on the course demonstration. You can see the structure in the 'fixtures' folder.
 
 The content is entirely fictional and created by myself, therefore it is very limited. I would ideally have liked a huge database of artworks available to the user, but for all intents and purposes it showcases a limited 
 number of artworks and demonstrates the purpose of the site.
