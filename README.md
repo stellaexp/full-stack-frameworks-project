@@ -5,7 +5,7 @@ The project I created for Code Institute's Full Stack Frameworks conclusion was 
 ## UX
  
 I started the UX process by looking at a variety of popular online shops, such as ASOS, Amazon and Society6, to see how a user would navigate their shopping experience. I focused on the shopping basket structure and the ease of the buying process. 
-I then created my user stories based on my research, and from the videos in the course content.
+I then created my user stories based on my research, and from videos in the course content.
 
 After I created my user stories, I turned my attention to the UI of the site. I knew I wanted to create a 'clean' look and feel to the website, with easy navigation at the top. I decided on the name and thought the logo should come from Google Fonts. I then created some wireframes based upon this.
 
@@ -83,14 +83,13 @@ The purpose of this project was to showcase our knowledge of front and backend t
 
 * An account profile, so a user can review past orders.
 
-Although not technically a feature, I would like to change the $ to a £ as this does not flow consistently across the site.
+Although technically not a feature, I would like to change the $ to a £ as this does not flow consistently across the site.
 
 ###  Bugs
 
-I'm using the external JavaScript grid layout library [Masonry JS](https://masonry.desandro.com/). A bug I encountered was every time I loaded the page the images would overlap each other. 
-If I sorted them into 'category', for example, they would have enough spacing. I managed to find a solution to this on Stack Overflow,
-which can be seen [here](https://stackoverflow.com/questions/18849296/masonry-js-overlapping-items). However, this solution has compromised the page loading time and now 
-it takes longer for all the images in the gallery to show up.
+I used the external JavaScript grid layout library [Masonry JS](https://masonry.desandro.com/). A bug I encountered was every time I loaded the page, the images would overlap each other - but if I sorted them into 'category', for example, they would have enough spacing. 
+I managed to find a solution to this on Stack Overflow, which can be seen [here](https://stackoverflow.com/questions/18849296/masonry-js-overlapping-items). However, this solution has compromised the page loading time and now 
+it takes longer for all the images in the gallery to show.
 
 ## Technologies Used
 
@@ -209,7 +208,7 @@ I followed, with meticulous detail, the instructions on how to build an online s
 
 ### Content
 
-I initially wanted to use the 'Art Images: Drawing/Painting/Sculptures/Engravings' dataset from Kaggle. I tried using this dataset initially but soon realised this was not fit for my purpose, so I had to create my own dataset.
+I initially wanted to use the 'Art Images: Drawing/Painting/Sculptures/Engravings' dataset from Kaggle. I tried using this dataset, but soon realised this was not fit for my purpose, so I had to create my own dataset.
 
 I started by looking at images from the open source image gallery website [unsplash.com](https://unsplash.com/) and then modelled my dataset on the course demonstration. You can see the structure in the 'fixtures' folder or an example is shown above in the Database Schema.
 

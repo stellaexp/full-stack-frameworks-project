@@ -7,7 +7,6 @@ a.navbar-brand, .navbar-brand {
     font-size: 2.5rem;
 }
 
-
 .img-jumbo {
     max-height: 200vh;
 
@@ -59,6 +58,7 @@ a.navbar-brand, .navbar-brand {
 .card {
     width: 18rem !important;
 }
+
 /* Looked up solution here https://stackoverflow.com/questions/16550485/hide-div-tag-on-mobile-view-only */
 /* https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
 
