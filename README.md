@@ -13,7 +13,7 @@ The user stories and low-fidelity wireframes are located in the UI-UX folder.
 
 ## Database schema
 
-An example of the data structure in SQLite is as follows;
+An example of the data structure is as follows;
 
 **Products**
 
@@ -109,6 +109,8 @@ it takes longer for all the images in the gallery to show.
 * pip is the package installer for Python.
 8. [db.SQLite3](https://www.sqlite.org/index.html)
 * SQLite is the relational database management system.
+9. [postgreSQL](https://www.postgresql.org/)
+PostgreSQL is a object-relational database system, used for deployment to Heroku.
 9. [Masonry](https://masonry.desandro.com/)
 * A JavaScript grid layout library for the image gallery.
 10. [Gitpod](https://www.gitpod.io/)
@@ -192,15 +194,45 @@ I decided to manually test the site. Each page was tested on Chrome, Firefox, Sa
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+My project is deployed to Heroku. You can find the live version [here](https://full-stack-frameworks-k.herokuapp.com/).
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+I deployed on Heroku, following these steps;
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+First, create a requirements.txt file so Heroku can install the required dependencies
 
+```
+sudo pip3 freeze --local > requirements.txt
+```
+
+Next create a Procfile.
+
+```
+web: gunicorn full-stack-frameworks-project.wsgi:application
+```
+
+Make sure all the latest changes have been saved.
+
+Login to Heroku via the terminal
+
+```
+heroku login
+```
+
+Push the latest changes to Heroku.
+
+```
+git push heroku master
+```
+
+I set the Config Vars of the PORT and IP.
+
+```
+IP: 0.0.0.0
+```
+
+```
+PORT: 5000
+```
 
 ## Credits
 
