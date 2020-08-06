@@ -83,6 +83,15 @@ The purpose of this project was to showcase our knowledge of front and backend t
 
 * An account profile, so a user can review past orders.
 
+Although not technically a feature, I would like to change the $ to a £ as this does not flow consistently across the site.
+
+###  Bugs
+
+I'm using an external JS library [Masonry JS](https://masonry.desandro.com/). Every time I loaded the page the images would overlap each other. 
+But if I sorted them into 'category', for example, the page would look fine and they would have enough spacing. I managed to find a solution to this on Stack Overflow,
+which can be seen [here](https://stackoverflow.com/questions/18849296/masonry-js-overlapping-items). However, this solution has compromised the page loading time and now 
+it takes longer for all the images in the gallery to show up.
+
 ## Technologies Used
 
 1. [Balsamiq](https://balsamiq.com/)

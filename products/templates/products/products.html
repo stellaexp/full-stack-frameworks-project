@@ -33,16 +33,14 @@
                         <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                         <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                         <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                        <!--<option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                        <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>-->
                     </select>
                 </div>
             </div>
         </div>
         <br>
             <div class="grid ml-5">
-                    {% for product in products %}
-                            <div class="grid-item card border-0" style="width: 18rem;">
+                {% for product in products %}          
+                        <div class="grid-item card border-0">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -63,14 +61,16 @@
                                     </div>
                                 </div>
                         </div>
-                     {% endfor %}
+                {% endfor %}
             </div>
     </div>
 <script>
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: 260,
-  gutter: 20
+jQuery(window).on('load', function(){
+    $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 200,
+    gutter: 20
+    });
 });
 </script>
     
