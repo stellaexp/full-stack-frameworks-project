@@ -13,7 +13,7 @@ The user stories and low-fidelity wireframes are located in the UI-UX folder.
 
 ## Database schema
 
-The structure of the data in sqlite is as follows;
+An example of the data structure in sqlite is as follows;
 
 Products
 
@@ -42,6 +42,41 @@ Categories
       "friendly_name": "Photography"
     }
   }
+```
+
+## Data Modelling
+
+As stated in the course requirements, we were to create two custom views that went beyond that shown in the course content. Mine can be found in shopping_basket/views.py
+
+```
+def edit_basket(request, item_id):
+    """ Lets user update quantity in their shopping basket """
+
+    quantity = int(request.POST.get('quantity'))
+    redirect_url = request.POST.get('redirect_url')
+    bag = request.session.get('bag', {})
+
+    if item_id in list(bag.keys()):
+        bag[item_id] = quantity
+
+    request.session['bag'] = bag
+
+    return redirect(redirect_url)
+
+
+def delete_item_from_basket(request, item_id):
+    """ View to delete item from users shopping basket """
+
+    # Looked up how to delete item from basket here
+    # https://stackoverflow.com/questions/52477268/how-to-remove-an-item-from-django-session
+
+    bag = request.session.get('bag', {})
+    del bag[item_id]
+    request.session['bag'] = bag
+
+    redirect_url = request.POST.get('redirect_url')
+
+    return redirect(redirect_url)
 ```
 
 ## Features
@@ -166,8 +201,15 @@ I decided to manually test the site. Each page was tested on Chrome, Firefox, Sa
 * Connection is secure symbol showing in url
 * Stripe payment should validate any card on typing in details
 * Stripe payment should submit
-* Verified this in Stripe Webhooks - should say 'succeeded'
 * Page should return to checkout success
+
+11. Payment Verification through Stripe
+For the testing process I used test card details, provided by stripe. These were:
+Card: 4242424242424242
+Date: 04/24
+CVC: 242
+ZIP: 42424
+* Verified this in Stripe Webhooks - should return 'succeeded'
 
 10. Checkout success
 * Thank you message with users email displayed
@@ -201,6 +243,8 @@ number of artworks and demonstrates the purpose of the site.
 ### Media
 
 All images for this project were obtained from the open source platform [unsplash.com](https://unsplash.com/).
+
+
 
 ### Acknowledgements
 
