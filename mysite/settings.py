@@ -26,8 +26,7 @@ SECRET_KEY = 'yn)m#27a5bglr_)b_v7ba84kq4f1%f+^lz8d9!an2if6rtqsa1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://git.heroku.com/full-stack-frameworks-k.git']
-
+ALLOWED_HOSTS = ['full-stack-frameworks-k.herokuapp.com']
 
 # Application definition
 
