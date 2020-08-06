@@ -26,6 +26,18 @@ a.navbar-brand, .navbar-brand {
     width: 1.5rem;
 }
 
+/* url django - https://simpleit.rocks/python/django/call-static-templatetag-for-background-image-in-css/ */
+
+#main-background {
+    background-image: url('/static/images/geometric.png');
+    height: 100vh;
+    margin-bottom: 0px;
+}
+
+.text-white {
+    color: white;
+}
+
 .ul-none {
     list-style-type: none;
 }
@@ -41,5 +53,23 @@ a.navbar-brand, .navbar-brand {
 }
 
 .grid-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+    width: 18rem !important;
+}
+/* Looked up solution here https://stackoverflow.com/questions/16550485/hide-div-tag-on-mobile-view-only */
+/* https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
+
+@media screen and (max-width: 992px) {
+  a.navbar-brand, .navbar-brand {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 574px) {
+    .form-inline {
+        
+    }
 }
