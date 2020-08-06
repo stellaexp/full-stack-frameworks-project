@@ -224,16 +224,6 @@ Push the latest changes to Heroku.
 git push heroku master
 ```
 
-I set the Config Vars of the PORT and IP.
-
-```
-IP: 0.0.0.0
-```
-
-```
-PORT: 5000
-```
-
 ## Credits
 
 I followed, with meticulous detail, the instructions on how to build an online shop from the course content. I would also like to give credit to Tutor Support, who pointed me in the right direction if I became stuck.
