@@ -15,7 +15,7 @@ The user stories and low-fidelity wireframes are located in the UI-UX folder.
 
 An example of the data structure in sqlite is as follows;
 
-Products
+**Products**
 
 ```
   {
@@ -31,7 +31,7 @@ Products
     }
 ```
 
-Categories
+**Categories**
 
 ```
   {
@@ -46,7 +46,7 @@ Categories
 
 ## Data Modelling
 
-As stated in the course requirements, we were to create two custom views that went beyond that shown in the course content. Mine can be found in shopping_basket/views.py
+As stated in the course requirements, we were to create two custom views that went beyond what is shown in the course content. Mine can be found in shopping_basket/views.py
 
 ## Features
 
@@ -98,7 +98,7 @@ The purpose of this project was to showcase our knowledge of front and backend t
 6. [Django](https://www.djangoproject.com/)
 * The project is built on this high-level Python Web framework.
 7. [pip](https://pip.pypa.io/en/stable/)
-* pip is the package installer for Python
+* pip is the package installer for Python.
 8. [db.sqlite3](https://www.sqlite.org/index.html)
 * SQLite is the relational database management system.
 9. [Masonry](https://masonry.desandro.com/)
@@ -172,10 +172,10 @@ I decided to manually test the site. Each page was tested on Chrome, Firefox, Sa
 
 11. Payment Verification through Stripe
 * For the testing process I used test card details, provided by stripe. These were:
-⋅⋅* Card: 4242424242424242
-⋅⋅* Date: 04/24
-⋅⋅* CVC: 242
-⋅⋅* ZIP: 42424
+* Card: 4242424242424242
+* Date: 04/24
+* CVC: 242
+* ZIP: 42424
 * Verified this in Stripe Webhooks - should return 'succeeded'
 
 10. Checkout success
