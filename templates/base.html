@@ -52,9 +52,14 @@
             </button>
             <!-- Align bootstrap nav https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items -->
             <div class="ml-auto">
-                <form method="GET" action="{% url 'products' %}" class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
-                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            <!-- Responsive search bar https://stackoverflow.com/questions/44642634/how-to-create-responsive-search-box-in-bootstrap -->
+                <form method="GET" action="{% url 'products' %}" class="navbar-form">
+                    <div class="input-group">
+                        <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
                 </form>
             </div>
             <!-- Dropdown tutorial https://mdbootstrap.com/docs/jquery/navigation/navbar/ -->

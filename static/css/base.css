@@ -69,7 +69,13 @@ a.navbar-brand, .navbar-brand {
 }
 
 @media screen and (max-width: 574px) {
-    .form-inline {
-        
+    .max-thumbnail, .img-thumbnail {
+        max-width: 150px !important;
     }
+
+    .form-control-sm {
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
 }

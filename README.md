@@ -4,16 +4,16 @@ The project I created for Code Institute's Full Stack Frameworks conclusion was 
  
 ## UX
  
-I started the UX process by looking at a variety of popular online shops, such as ASOS, Amazon and Society6, to see how a user would navigate their shopping experience. I focused on the shopping basket structure and the ease of the buying processs. 
+I started the UX process by looking at a variety of popular online shops, such as ASOS, Amazon and Society6, to see how a user would navigate their shopping experience. I focused on the shopping basket structure and the ease of the buying process. 
 I then created my user stories based on my research, and from the videos in the course content.
 
-After I created my user stories I turned my attention to the UI of the site. I knew I wanted to create a 'clean' look and feel to the website, with easy navigation at the top. I decided on the name and thought the logo should come from Google Fonts. I then created some wireframes based upon this.
+After I created my user stories, I turned my attention to the UI of the site. I knew I wanted to create a 'clean' look and feel to the website, with easy navigation at the top. I decided on the name and thought the logo should come from Google Fonts. I then created some wireframes based upon this.
 
 The user stories and low-fidelity wireframes are located in the UI-UX folder.
 
 ## Database schema
 
-An example of the data structure in sqlite is as follows;
+An example of the data structure in SQLite is as follows;
 
 **Products**
 
@@ -87,8 +87,8 @@ Although not technically a feature, I would like to change the $ to a £ as this
 
 ###  Bugs
 
-I'm using an external JS library [Masonry JS](https://masonry.desandro.com/). Every time I loaded the page the images would overlap each other. 
-But if I sorted them into 'category', for example, the page would look fine and they would have enough spacing. I managed to find a solution to this on Stack Overflow,
+I'm using the external JavaScript grid layout library [Masonry JS](https://masonry.desandro.com/). A bug I encountered was every time I loaded the page the images would overlap each other. 
+If I sorted them into 'category', for example, they would have enough spacing. I managed to find a solution to this on Stack Overflow,
 which can be seen [here](https://stackoverflow.com/questions/18849296/masonry-js-overlapping-items). However, this solution has compromised the page loading time and now 
 it takes longer for all the images in the gallery to show up.
 
@@ -108,7 +108,7 @@ it takes longer for all the images in the gallery to show up.
 * The project is built on this high-level Python Web framework.
 7. [pip](https://pip.pypa.io/en/stable/)
 * pip is the package installer for Python.
-8. [db.sqlite3](https://www.sqlite.org/index.html)
+8. [db.SQLite3](https://www.sqlite.org/index.html)
 * SQLite is the relational database management system.
 9. [Masonry](https://masonry.desandro.com/)
 * A JavaScript grid layout library for the image gallery.
@@ -139,7 +139,7 @@ I decided to manually test the site. Each page was tested on Chrome, Firefox, Sa
 * User should be able to sort by All, Painting, Sculpture, Collage, Photography
 
 5. Sort by price
-* Navlink takes them to a pre-sorted page (low to high)
+* Nav link takes them to a pre-sorted page (low to high)
 * User can select high to low
 
 6. Search by keywords
@@ -211,7 +211,7 @@ I followed, with meticulous detail, the instructions on how to build an online s
 
 I initially wanted to use the 'Art Images: Drawing/Painting/Sculptures/Engravings' dataset from Kaggle. I tried using this dataset initially but soon realised this was not fit for my purpose, so I had to create my own dataset.
 
-I started by looking at images from the open source image gallery website [unsplash.com](https://unsplash.com/) and then modeled my dataset on the course demonstration. You can see the structure in the 'fixtures' folder or an example is shown above in the Database Schema.
+I started by looking at images from the open source image gallery website [unsplash.com](https://unsplash.com/) and then modelled my dataset on the course demonstration. You can see the structure in the 'fixtures' folder or an example is shown above in the Database Schema.
 
 The content is entirely fictional and created by myself, therefore it is very limited. I would ideally have liked a huge database of artworks available to the user, but for all intents and purposes it showcases a limited 
 number of artworks and demonstrates the purpose of the site.
