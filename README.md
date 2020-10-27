@@ -192,6 +192,12 @@ I decided to manually test the site. Each page was tested on Chrome, Firefox, Sa
 * Thank you message with users email displayed
 * Return to store button working
 
+12. Sign up
+* Form should take email, username and password
+* Form won't submit if username already taken
+* On submission, user should receive a verification email to given email
+* Link should go to verification page, where user has finalised sign up process
+
 ## Deployment
 
 My project is deployed to Heroku. You can find the live version [here](https://full-stack-frameworks-k.herokuapp.com/).
